@@ -7,4 +7,5 @@ Both are conncted to Mobile Broadcast network = 192.168.43.255\
 Image is captured on RPI using RPI-camera and sent to PC using TCP Protocol.\
 version3 - Raw code for transferring single image \
 version4 - Well written code for transferring single image \
-version5_6 - Well written code for transfer, color detection of multi images(Final Project Task)  
+version5 - Well written code for transfer, color detection(at server) of multi images\
+version6 - Well written code for transfer, color detection(at client) of multi images
