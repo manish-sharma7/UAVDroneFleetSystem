@@ -17,13 +17,11 @@ def captureImage(picPath):
     print("We have taken a picture.")
     return picName
 
-def main():
-    while True:
-        picName = captureImage(picPath)
-        print("Took a picture")
-        completePath = picPath + picName
-        print(completePath)
-        send(completePath)
-        print("Image has been sent to PC :)")
-        os.remove(completePath)
-        break
+while True:
+    picName = captureImage(picPath)
+    print("Took a picture")
+    completePath = picPath + picName
+    print(completePath)
+    send(completePath)
+    print("Image has been sent to PC :)")
+    os.remove(completePath)
