@@ -20,10 +20,10 @@ def sendPic(s, filePath):
         chunk = pic.read(1024)
     pic.close()
     print("Done sending")
-    s.close()
     return "Done sending"
 
+s = setupSocket()
+
 def send(filePath):
-    s = setupSocket()
     response = sendPic(s, filePath)
     return response
