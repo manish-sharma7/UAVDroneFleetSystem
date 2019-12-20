@@ -88,13 +88,10 @@ def datarecieve(conn):
     conn.close()
 
 s = setupServer()
-
-def main():
-    while True:
-        try:
-            conn = setupConnection()
-            datarecieve(conn)
-            s.close()
-        except:
-            break
+while True:
+    try:
+        conn = setupConnection()
+        datarecieve(conn)
+    except:
+        break
 
